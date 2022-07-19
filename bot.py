@@ -2,10 +2,10 @@
 import os
 import discord
 from discord.ext import commands
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from espn import *
 from nbaapi import *
-load_dotenv()
+#load_dotenv()
 
 #Initialize Client
 client = discord.Client()
