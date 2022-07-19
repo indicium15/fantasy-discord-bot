@@ -1,3 +1,4 @@
 nba_api
 espn_api
 discord.py
+dotenv
