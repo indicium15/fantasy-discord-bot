@@ -2,3 +2,4 @@ nba_api
 espn_api
 discord.py
 numpy
+requests>=2.0.0,<3.0.0

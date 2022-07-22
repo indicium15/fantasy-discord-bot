@@ -58,6 +58,7 @@ def get_player_id(name):
 def season_stats_lookup(player_id, season='2021-22'):
     stats = playerdashboardbyyearoveryear.PlayerDashboardByYearOverYear(player_id=player_id, season=season, per_mode_detailed='PerGame')
     dictionary = stats.overall_player_dashboard.get_dict()
+    print(dictionary)
     reply = "Stats for {} in {}\n".format(get_player_name(player_id),dictionary['data'][0][1])
     reply += "{:<9}".format('GP, MPG : ') + "{:^2}, ".format(dictionary['data'][0][5]) + "{:^2}".format(dictionary['data'][0][9]) + "\n\n"
     reply += '*Overview*:\n'
