@@ -82,8 +82,8 @@ def get_season_stats(name, season='2021-22'):
         player_id = get_player_id(name)
         response = season_stats_lookup(player_id, season)
         return response
-    except:
-        return("An error has occured, please try again.")
+    except Exception as e:
+        return(str(e))
 
 def estimated_metrics(player_name,season='2021-22'):
     player_id = get_player_id(player_name)
